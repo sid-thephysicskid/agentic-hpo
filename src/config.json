@@ -1,0 +1,33 @@
+{
+    "model_info": "This is an XGBoost classification model for a tabular dataset.",
+    "dataset_info": "The dataset is a CSV file containing tabular data with categorical and numerical features, and a target column for classification.The Iris Dataset contains four features (length and width of sepals and petals) of 50 samples of three species of Iris (Iris setosa, Iris virginica and Iris versicolor). These measures were used to create a linear discriminant model to classify the species.",
+    "hyperparameter_info": {
+        "learning_rate": [
+            0.01,
+            0.05,
+            0.1,
+            0.2
+        ],
+        "max_depth": [
+            3,
+            4,
+            5,
+            6
+        ],
+        "n_estimators": [
+            100,
+            150,
+            200,
+            250
+        ],
+        "subsample": [
+            0.6,
+            0.8,
+            1.0
+        ]
+    },
+    "optim_goal": "Maximize the F1 score (macro-averaged) on the validation set.",
+    "tuning_script": "xgb_tuning.py",
+    "data_file": "iris.csv",
+    "target_column": "variety"
+}
